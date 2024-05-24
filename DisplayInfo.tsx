@@ -1,10 +1,10 @@
 import { IDisplayInfo } from "./displayInfo.model";
-
+import "./displayInfo.css";
 
 export const DisplayInfo = (props: IDisplayInfo) => {
   const { infoData, children } = props;
   return (
-    <table className="line-height-2 surface-100 display-info w-full display-info-table">
+    <table className="line-height-2 surface-100 w-full display-info-table">
       <tbody>
         {Object.entries(infoData).map(([key, value]: any, index) => {
           return (
